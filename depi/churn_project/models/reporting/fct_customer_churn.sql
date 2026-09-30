@@ -1,0 +1,20 @@
+SELECT
+    customer_id,
+    age,
+    gender,
+    married,
+    number_of_dependents,
+    city,
+    zip_code,
+    tenure_in_months,
+    offer,
+    internet_type,
+    contract,
+    payment_method,
+    monthly_charge,
+    total_charges,
+    total_revenue,
+    customer_status,
+    churn_category,
+    churn_reason
+FROM {{ ref('stg_customer_churn') }}
